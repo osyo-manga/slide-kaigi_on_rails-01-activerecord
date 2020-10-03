@@ -287,7 +287,7 @@ using BindingDebug
 
 def plus(a, b)
   # メソッド名を出力
-  pp { __method__  }
+  pp { __method__ }
   # output: __method__ # => :plus
 
   # クラス名を出力
@@ -306,8 +306,7 @@ plus 1, 2
 - - -
 
 * pp でデバッグ出力を仕込むと調べたい箇所以外のタイミングでも出力される事がある
-    * 特に Rails みたいな巨大なライブラリだとあるメソッドが全体で何十回も呼ばれる事がある
-* pp だけではなくて if $debug で制御することで任意のタイミングでのみデバッグ出力できる
+* pp だけではなくて pp hoge if $debug で制御することで任意のタイミングでのみデバッグ出力できる
 
 ```ruby
 def twice(a)
@@ -317,11 +316,13 @@ def twice(a)
 end
 
 twice(42)
+
 $debug = true
 # ここで呼び出された場合のみデバッグ出力する
 twice("homu")
 $debug = false
-twice("mami")
+
+twice(42)
 ```
 
 >>>
@@ -587,7 +588,7 @@ end
     * ちゃんと意図するメソッドが呼ばれているかどうか確認しよう
 * ActiveRecord を読みたい場合はまずは Ruby の気持ちを理解するところから！！                           <!-- .element: class="fragment" -->
     * ActiveRecord なにもわからないけど Ruby はチョットデキルのでなんとか読むことはできる
-
+* 記述したデバッグコードはちゃんと消そう…                           <!-- .element: class="fragment" -->
 
 ---
 
