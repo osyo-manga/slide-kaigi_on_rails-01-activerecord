@@ -200,7 +200,7 @@ module ActiveRecord
 * コンテキストを切り替えたブロックの評価        <!-- .element: class="fragment" -->
     * `instance_exec` や `instance_eval`, `class_eval`
 * 継承関連                                    <!-- .element: class="fragment" -->
-    * いろんなところで include /prepend や extend してる
+    * いろんなところで include/prepend や extend してる
     * User.ancestors とか見るとめっちゃ継承してる…
 * ActiveSupport::Concern や delegate の機能        <!-- .element: class="fragment" -->
     * Ruby ではなくて Rails の拡張機能
