@@ -145,7 +145,7 @@ module ActiveRecord
 * Ruby で一番好きな機能は Refinements
 * 普段は [activerecord-bitemporal](https://github.com/kufu/activerecord-bitemporal) を開発してる
 * エディタは Vim 
-* 質問等があれば Twitter まで！
+* 質問や気になる点があればぜひ Twitter で！
 
 ---
 
