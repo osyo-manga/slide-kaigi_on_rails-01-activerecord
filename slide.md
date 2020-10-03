@@ -214,8 +214,8 @@ module ActiveRecord
 
 * Object#method                           <!-- .element: class="fragment" -->
     * メソッドの定義位置などを調べる
-* メタ情報などをデバッグ出力                           <!-- .element: class="fragment" -->
-    * `__method__` `caller` `.class`
+* メタ情報などを取得するメソッド                           <!-- .element: class="fragment" -->
+    * `__method__`, `caller`, `.class`
 * 自作デバッグ出力                          <!-- .element: class="fragment" -->
     * gem : [binding-debug](https://github.com/osyo-manga/gem-binding-debug)
 * 実行時デバッグ機能                           <!-- .element: class="fragment" -->
@@ -411,7 +411,7 @@ p User.where(active: true).to_sql
 
 * ActiveRecord というのはいろいろなことをやっている                           <!-- .element: class="fragment" -->
 * ActiveRecord を読む！と言っても漠然としてて迷走しがち                           <!-- .element: class="fragment" -->
-* まずは『ActiveRecord のこういう機能を読む！』という目的を見つけると入り口が明確になってよみやすい                          <!-- .element: class="fragment" -->
+* まずは『ActiveRecord のこういう機能を読む！』という目的を見つけると入り口が明確になって読みやすい                          <!-- .element: class="fragment" -->
     * User.where(name: "Tom").to_sql で SQL がどう構築されるのか
     * has_many :comments を行うと何が起きるのか
     * バリデーションの仕組みって…？コールバックの仕組みって…？ 
@@ -583,18 +583,18 @@ end
 #### まとめ
 - - -
 
-* ActiveRecord はいろんなことをしているので全部を読むのは難しい                           <!-- .element: class="fragment" -->
-    * まずは小さな目的を見つけて読んでいくと入りやすい
-* 意図しない動作をした場合は #method で定義位置を確認したりデバッグ出力する                           <!-- .element: class="fragment" -->
-    * たまに全然違うメソッドの実装を読んでいる事がある
-    * ちゃんと意図するメソッドが呼ばれているかどうか確認しよう
-* まずは Ruby の気持ちを理解するところから！！                                   <!-- .element: class="fragment" -->
+* まずは Ruby の気持ちを理解するところからはじめる！！                                   <!-- .element: class="fragment" -->
     * 実際 Ruby がわかっていれば（処理は複雑だが）読み解くのはそこまで難しくはない
     * 複雑なコードを見てもパニックにならず冷静に読んでみるのが大事
-* 記述したデバッグコードはちゃんと消そう…                           <!-- .element: class="fragment" -->
+* コードを読むときは目的を持って読んでいく！                                   <!-- .element: class="fragment" -->
+    * まずは小さな目的を見つけて読んでいくと入り口が明確になって読みやすい
+* Ruby には便利なデバッグ機能がたくさんあるので使い分けてコードを読んでいこう                          <!-- .element: class="fragment" -->
+    * 記述したデバッグコードはちゃんと消そう… 
+* 他の人がコードを読んだり書いたりするのを見るのは楽しいのでみんなどんどんやっていこう！！                 <!-- .element: class="fragment" -->
 
 ---
 
+## Let's enjoy Ruby reading!!
 
 ## ご清聴
 ## ありがとうございました
