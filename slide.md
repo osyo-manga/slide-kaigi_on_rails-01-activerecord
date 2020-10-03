@@ -144,6 +144,7 @@ module ActiveRecord
 * 趣味で Ruby にパッチを投げたり、気になった Ruby のチケットをブログにまとめたりしてる
 * Ruby で一番好きな機能は Refinements
 * 普段は [activerecord-bitemporal](https://github.com/kufu/activerecord-bitemporal) を開発してる
+    * [RubyKaigi Takeout 2020 感想戦 @仮想松本](https://www.youtube.com/watch?v=TN5QVTtUHLk) に参加したり
 * エディタは Vim 
 * 質問や気になる点があればぜひ Twitter で！
 
