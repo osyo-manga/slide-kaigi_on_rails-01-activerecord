@@ -149,6 +149,10 @@ module ActiveRecord
 
 ---
 
+## ActiveRecord の歩み方
+
+---
+
 #### アジェンダ
 - - -
 
@@ -209,7 +213,8 @@ module ActiveRecord
 
 * Object#method                           <!-- .element: class="fragment" -->
     * メソッドの定義位置などを調べる
-* メタ情報をデバッグ出力                           <!-- .element: class="fragment" -->
+* メタ情報などをデバッグ出力                           <!-- .element: class="fragment" -->
+    * `__method__` `caller` `.class`
 * 自作デバッグ出力                          <!-- .element: class="fragment" -->
     * gem : [binding-debug](https://github.com/osyo-manga/gem-binding-debug)
 * 実行時デバッグ機能                           <!-- .element: class="fragment" -->
@@ -219,8 +224,7 @@ module ActiveRecord
 * ActiveRecord の #to_sql                            <!-- .element: class="fragment" -->
     * 実行される SQL 文を取得する
 * エディタを便利にする                           <!-- .element: class="fragment" -->
-    * エディタ上でファイラをつかったり grep したりする
-    * 自分で使いやすいようにカスタマイズする
+    * エディタ上でファイラをつかったり grep したり
 
 >>>
 
